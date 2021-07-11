@@ -213,25 +213,25 @@ input[type="text"]:focus,button:focus, .btn:focus, .accordion-button:focus{
 
 /*//------------------ Responsiveness ----------------//
 ------------------------------------------------------*/
-@media (min-width: 320px) and (max-width: 576px) {
+@media (min-width: 200px) and (max-width: 576px) {
 	#hero h1{
-		font-size: 40px;
-		line-height: 40px;
+		font-size: 30px;
+		line-height: 30px;
 	}
 	#hero .overlay-text{
-		padding-top: 50px;
+		padding-top: 30px;
 	}
 	#hero{
-		max-height: 57vh;
+		max-height: 40vh;
 	}
 	#hero h2{
-		font-size: 20px;
+		font-size: 15px;
 		line-height: 20px;
 	}
 	#hero p{
-		font-size: 13px;
-		width: 80%;
-		margin: 15px auto;
+		font-size: 12px;
+		width: 50%;
+		margin: 7px auto;
 	}
 	.row{
 		margin-left: 0;
