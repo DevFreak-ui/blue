@@ -202,7 +202,7 @@ body{
 
 
 
-input[type="text"]:focus,button:focus, .btn:focus, .accordion-button:focus{
+input[type="text"]:focus,button:focus, .btn:focus, .accordion-button:focus,.navbar-toggler:focus{
 	border-color: rgba(255, 255, 255, 0.05);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 255, 255, 0.01);
     outline: 0 none;
