@@ -215,8 +215,8 @@ input[type="text"]:focus,button:focus, .btn:focus, .accordion-button:focus{
 ------------------------------------------------------*/
 @media (min-width: 200px) and (max-width: 576px) {
 	#hero h1{
-		font-size: 30px;
-		line-height: 30px;
+		font-size: 35px;
+		line-height: 35px;
 	}
 	#hero .overlay-text{
 		padding-top: 30px;
@@ -229,7 +229,7 @@ input[type="text"]:focus,button:focus, .btn:focus, .accordion-button:focus{
 		line-height: 20px;
 	}
 	#hero p{
-		font-size: 12px;
+		font-size: 13px;
 		width: 50%;
 		margin: 7px auto;
 	}
@@ -242,5 +242,23 @@ input[type="text"]:focus,button:focus, .btn:focus, .accordion-button:focus{
 	}
 	#gallery .row{
 		min-height: 100vh;
+	}
+	.scroll{
+		font-size: 13px;
+		margin-top: 25px;
+	}
+	#featured .featured-img{
+		height: 400px !important;
+	}
+	.f1{
+		max-height: 100% !important;
+	}
+	.f2{
+		margin-top: 1rem !important;
+	}
+
+	.gallery-txt{
+		padding-top: 15px !important;
+		font-size: 15px;
 	}
 }
