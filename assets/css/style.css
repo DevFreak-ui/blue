@@ -1,13 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css");
 
+
+:root {
+	--primary-color: #2879FE;
+	--secondary-color: #191919;
+	--primary-background: #2879FE;
+}
+
+.my-large {
+	margin: 100px 0;
+}
+
+.my-small {
+	margin: 50px 0;
+}
+
+.py-large {
+	padding: 100px 0;
+}
+
+.py-small {
+	padding: 50px 0;
+}
+
+
+
+
+/*
+-------------------------------
+	*** BASE ***	
+-------------------------------
+*/
 .p-color{
-	color: #2879FE !important;
+	color:  var(--primary-color);
 }
 .p-bg{
-	background-color: #2879FE !important;
+	background-color:  var(--primary-background);
 }
 .s-color{
-	color: #191919 !important;
+	color: var(--seconday-color);
 }
 .dimmed-txt{
 	font-size: 14px;
@@ -41,10 +73,9 @@ body{
 }
 
 #hero{
-	background-image: url('../../images/bg1.png');
+	background-image: url('../../images/bg3.jpg');
 	background-position: center;
 	background-size: cover;
-	height: 91vh;
 }
 
 #hero h2{
@@ -60,13 +91,6 @@ body{
     font-weight: 600;
 }
 
-#hero p{
-	font-size: 15px;
-    line-height: 1.1;
-    margin-top: 18px;
-    opacity: .8;
-}
-
 .scroll span{
 	background-color: rgba(215, 215, 215, 0.48);
 	padding-top: 10px 15px;
@@ -77,14 +101,22 @@ body{
 	height: 20px;
 }
 
-/*//------------------ featured product ----------------//
----------------------------------------------------------*/
-#hero .overlay-text{
-	padding-top: 100px;
-}
 
+
+/*
+-------------------------------
+	*** FEATURED PRODUCT ***	
+-------------------------------
+*/
 .row-head h6{
 	font-size: 14px;
+}
+
+#featured .featured-img {
+	background-image: url('../../images/product.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 100%;
 }
 
 #featured .badge{
@@ -108,8 +140,26 @@ body{
 }
 
 
-/*//------------------ all product ----------------//
----------------------------------------------------*/
+
+
+/*
+-------------------------------
+	*** ALL PRODUCTS ***	
+-------------------------------
+*/
+#products .i1 {
+	background-image: url('../../images/product.jpg');
+}
+#products .i2 {
+	background-image: url('../../images/product1.jpg');
+}
+#products .i3 {
+	background-image: url('../../images/product.jpg');
+}
+#products .i4 {
+	background-image: url('../../images/product1.jpg');
+}
+
 #products .category{
 	text-transform: uppercase;
 	font-size: 12.5px;
@@ -134,10 +184,18 @@ body{
 	background-position: center;
 }
 
+#products a {
+	text-decoration: none;
+}
 
 
-/*//------------------ Gallery ----------------//
------------------------------------------------*/
+
+
+/*
+-------------------------------
+	*** GALLERY SECTION ***	
+-------------------------------
+*/
 #gallery .img-contain{
 	background-position: center;
 	background-size: cover; 
@@ -151,8 +209,12 @@ body{
 
 
 
-/*//------------------ Reviews ----------------//
------------------------------------------------*/
+
+/*
+-------------------------------
+	*** REVIEWS SECTION ***	
+-------------------------------
+*/
 #reviews .carousel-inner{
 	width: 50%;
 	margin: 5px auto;
@@ -170,18 +232,30 @@ body{
 
 
 
-/*//------------------ faq ----------------//
--------------------------------------------*/
+/*
+-------------------------------
+	*** FAQs ***	
+-------------------------------
+*/
 #faq{
 	background-image: url('../../images/bg2-dark.jpg');
 	background-position: center;
 	background-size: cover;
 }
 
+#faq .accordion-button:not(.collapsed) {
+	background-color: transparent;
+	color: #fff;
+}
 
 
-/*//------------------ footer ----------------//
-----------------------------------------------*/
+
+
+/*
+-------------------------------
+	*** FOOTER ***	
+-------------------------------
+*/
 #footer{
 	background: #f7f8fa;
 }
@@ -203,17 +277,23 @@ body{
 
 
 input[type="text"]:focus,button:focus, .btn:focus, .accordion-button:focus,.navbar-toggler:focus{
-	border-color: rgba(255, 255, 255, 0.05);
-    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 255, 255, 0.01);
+	border-color: rgba(255, 255, 255, 0.001);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.0015), 0 0 8px rgba(255, 255, 255, 0.001);
     outline: 0 none;
 }
 
 
 
 
-/*//------------------ Responsiveness ----------------//
-------------------------------------------------------*/
+/*
+-------------------------------
+	*** RESPONSIVENESS ***	
+-------------------------------
+*/
 @media (min-width: 200px) and (max-width: 576px) {
+	.py-large {
+		padding: 20px 0;
+	}
 	#hero h1{
 		font-size: 35px;
 		line-height: 35px;
