@@ -66,16 +66,46 @@ body{
 	margin-right: 0;
 }
 
+.navbar .navbar-brand{
+	margin-right: 40px;
+}
+
 .navbar .nav-link{
-	font-size: 14px;
+	font-size: 12.5px;
 	text-transform: uppercase;
-	color: #191919;
+	color: #737373;
+	font-weight: bold;
+	padding: 10px 20px !important;
+	transition: all .3s ease-in-out;
+}
+
+.navbar .nav-link:hover{
+	color: #000;
+}
+
+.navbar .nav-item{
+	position: relative;
+}
+
+.navbar .nav-item .active{
+	color: #000;
+}
+
+.navbar .nav-item .active:after{
+	content: "";
+	position: absolute;
+	width: 80%;
+	height: 1px;
+	background-color: #000;
+	left: 10%;
+	bottom: 10%;
 }
 
 #hero{
 	background-image: url('../../images/bg3.jpg');
 	background-position: center;
 	background-size: cover;
+	min-height: 90vh;
 }
 
 #hero h2{
@@ -91,14 +121,21 @@ body{
     font-weight: 600;
 }
 
-.scroll span{
-	background-color: rgba(215, 215, 215, 0.48);
-	padding-top: 10px 15px;
-	margin: 5px;
-	border-radius: 50%; 
-	font-size: 1.2rem;
-	width: 20px;
-	height: 20px;
+.scroll{
+	font-weight: 600;
+	text-transform: uppercase;
+	position: absolute;
+	bottom: 20px;
+	width: 100%;
+	margin: auto;
+}
+
+.scroll a{
+	text-decoration: none;
+}
+
+.scroll i{
+	font-size: 20px;
 }
 
 
@@ -280,6 +317,16 @@ input[type="text"]:focus,button:focus, .btn:focus, .accordion-button:focus,.navb
 	border-color: rgba(255, 255, 255, 0.001);
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.0015), 0 0 8px rgba(255, 255, 255, 0.001);
     outline: 0 none;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    cursor: pointer;
+    background: #b99e64;
 }
 
 
