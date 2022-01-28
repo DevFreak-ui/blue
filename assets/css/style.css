@@ -66,6 +66,10 @@ body{
 	margin-right: 0;
 }
 
+.navbar {
+	background-color: #fff;
+}
+
 .navbar .navbar-brand{
 	margin-right: 40px;
 }
@@ -123,15 +127,22 @@ body{
 
 .scroll{
 	font-weight: 600;
+	font-size: 14px;
 	text-transform: uppercase;
 	position: absolute;
-	bottom: 20px;
-	width: 100%;
+	left: 0;
+	right: 0;
+	cursor: pointer;
+	bottom: 60px;
+	width: 200px;
 	margin: auto;
+	display: block;
+	padding-bottom: 10px;
 }
 
 .scroll a{
 	text-decoration: none;
+	color: #808080;
 }
 
 .scroll i{
@@ -337,7 +348,7 @@ input[type="text"]:focus,button:focus, .btn:focus, .accordion-button:focus,.navb
 	*** RESPONSIVENESS ***	
 -------------------------------
 */
-@media (min-width: 200px) and (max-width: 576px) {
+@media (min-width: 320px) and (max-width: 576px) {
 	.py-large {
 		padding: 20px 0;
 	}

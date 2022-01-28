@@ -16,7 +16,7 @@
 <body>
     
     <!--// *** NAVIGATION STARTS *** -->
-    <nav class="navbar navbar-expand-lg">
+    <nav id="nav-main" class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand" href="./index.html">
                 <img src="images/logo-small.png" alt="shop logo">
@@ -54,18 +54,20 @@
     <!--// *** HERO SECTION STARTS *** -->
     <section id="hero" class="text-center py-large">
         <div class="overlay-text">
-            <h2 class="p-color">
+            <h2 class="p-color" data-aos="zoom-in" data-aos-duration="500">
                 Chrochet
             </h2>
-            <h1>
+            <h1 data-aos="fade-up" data-aos-delay="500">
                 Creativity <br> at it's Peak
             </h1>
-            <div class="scroll">
-            <a href="#featured">
-                scroll Down
-                <br>
-                <i class="bi bi-chevron-down text-dark"></i>
-            </a></div>
+            <div class="scroll" data-aos="fade-up" data-aos-easing="ease"
+            data-aos-delay="900">
+                <a href="#featured">
+                    scroll Down
+                    <br>
+                    <i class="bi bi-chevron-down text-dark"></i>
+                </a>
+            </div>
         </div>
     </section>
     <!--// *** HERO SECTION ENDS *** -->
@@ -73,14 +75,16 @@
 
     <!--// *** FEATURED PRODUCT STARTS *** -->
     <section id="featured" class="my-large py-small">
-        <div class="row-head text-uppercase text-center my-3 py-3">
+        <div class="row-head text-uppercase text-center my-3 py-3"
+        data-aos="fade-up" data-aos-duration="1000">
             <h5>Featured Product</h5>
             <h6>
                 Top prduct approved by customers
             </h6>
         </div>
         <div class="row justify-content-center">
-            <div class="col-md-4 px-md-2">
+            <div class="col-md-4 px-md-2" data-aos="fade-right" 
+            data-aos-delay="300" data-aos-duration="1000">
                 <div class="featured-img"></div>
             </div>
             <div class="col-md-4 px-4 s-color py-2">
@@ -141,7 +145,7 @@
 
     <!--// *** ALL PRODUCTS STARTS *** -->
     <section id="products" class="my-5 py-lg-5 text-center">
-        <div class="row-head text-uppercase my-5 py-3">
+        <div class="row-head text-uppercase my-5 py-3 text-center" data-aos="fade-up" data-aos-duration="1000">
             <h5>Our Inventory</h5>
             <h6>
                 Top prduct approved by customers
@@ -226,13 +230,13 @@
         </div>
 
         <div class="row justify-content-center" style="height: 350px">
-            <div class="col-sm-2">
+            <div class="col-sm-2" data-aos="fade-up" data-aos-duration="1000">
               <div class="rounded img-contain f1" style="background-image: url(images/bg2.jpg);height: 105%;"></div>
             </div>
             <div class="col-sm-4 f2">
-                <div class="rounded img-contain h-50" style="background-image: url(images/bg3.jpg);">
+                <div class="rounded img-contain h-50" style="background-image: url(images/bg3.jpg);" data-aos="zoom-out" data-aos-duration="1000">
                 </div>
-                <div class="rounded img-contain h-50 mt-3" style="background-image: url(images/bg2.jpg);">
+                <div class="rounded img-contain h-50 mt-3" style="background-image: url(images/bg2.jpg);" data-aos="zoom-out" data-aos-duration="1000">
                 </div>
             </div>
             <div class="col-sm-2 f2">
@@ -242,16 +246,17 @@
                         <i class="bi bi-arrow-right p-2"></i>
                     </span>
                 </div>
-                <div class="rounded img-contain h-75" style="background-image: url(images/bg2.jpg);">
+                <div class="rounded img-contain h-75" style="background-image: url(images/bg2.jpg);" data-aos="fade-down" data-aos-duration="1000">
                 </div>
             </div>
         </div>
     </section>
+    <!--// *** GALLERY ENDS *** -->
 
 
     <!--// *** REVIEWS STARTS *** -->
     <section id="reviews" class="my-large py-small text-center">
-        <div class="row-head text-uppercase my-5 py-3 text-center">
+        <div class="row-head text-uppercase my-5 py-3 text-center"  data-aos="fade-up" data-aos-duration="1000">
             <h5>What our trusted customers say</h5>
             <h6>They trusted us and we did it</h6>
         </div>
@@ -368,7 +373,7 @@
 
     <!--// *** FOOTER STARTS *** -->
     <section id="footer" class="py-large">
-        <div class="row justify-content-center align-items-center footer-top my-3">
+        <div class="row justify-content-center align-items-center footer-top my-3"  >
             <div class="col-md-5 text-center px-md-5">
                 <h3>
                     Sign up  To Our Newsletter
@@ -387,16 +392,16 @@
                 </form>
                 <div class="socials text-center pt-4">
                     <ul class="d-flex">
-                        <a href="#">
+                        <a href="#"  data-aos="flip-up" data-aos-duration="1000" data-aos-delay="400">
                             <li><i class="bi bi-facebook px-2"></i></li>
                         </a>
-                        <a href="#">
+                        <a href="#"  data-aos="flip-up" data-aos-duration="1000" data-aos-delay="500">
                             <li><i class="bi bi-instagram px-2"></i></li>
                         </a>
-                        <a href="#">
+                        <a href="#"  data-aos="flip-up" data-aos-duration="1000" data-aos-delay="600">
                             <li><i class="bi bi-twitter px-2"></i></li>
                         </a>
-                        <a href="#">
+                        <a href="#"  data-aos="flip-up" data-aos-duration="1000" data-aos-delay="700">
                             <li><i class="bi bi-globe px-2"></i></li>
                         </a>
                     </ul>
@@ -419,7 +424,7 @@
         </div>
         <div class="offcanvas-body">
             <div class="input-group mb-3">
-                <input type="text" class="form-control py-3 border-0" placeholder="Search through our catalogue" aria-label="Search through our catalogu" aria-describedby="button-addon2">
+                <input type="text" class="form-control py-3 border-0" placeholder="Search through our catalogue" aria-label="Search through our catalogue" aria-describedby="button-addon2">
                 <button class="btn" type="button" id="button-addon2">
                     <img src="images/search.svg" alt="">
                 </button>
@@ -432,5 +437,6 @@
     <!--// *** JS DEPENDANCIES *** -->
     <script src="assets/vendor/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/dist/aos.js"></script>
+    <script src="assets/js/app.js"></script>
 </body>
 </html>
