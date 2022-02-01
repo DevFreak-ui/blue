@@ -164,7 +164,7 @@ body{
 	background-image: url('../../images/product.jpg');
 	background-size: cover;
 	background-position: center;
-	height: 100%;
+	min-height: 100%;
 }
 
 #featured .badge{
@@ -348,19 +348,28 @@ input[type="text"]:focus,button:focus, .btn:focus, .accordion-button:focus,.navb
 	*** RESPONSIVENESS ***	
 -------------------------------
 */
-@media (min-width: 320px) and (max-width: 576px) {
+@media (min-width: 300px) and (max-width: 576px) {
 	.py-large {
-		padding: 20px 0;
+		padding: 30px 0;
+	}
+	.py-small{
+		padding: 15px 0;
+	}
+	.my-large{
+		margin: 60px 0;
+	}
+	.my-small{
+		margin: 30px 0;
 	}
 	#hero h1{
-		font-size: 35px;
-		line-height: 35px;
+		font-size: 350%;
+		line-height: 90%;
 	}
 	#hero .overlay-text{
-		padding-top: 30px;
+		padding-top: 10%;
 	}
 	#hero{
-		max-height: 40vh;
+		min-height: 60vh;
 	}
 	#hero h2{
 		font-size: 15px;
@@ -370,6 +379,9 @@ input[type="text"]:focus,button:focus, .btn:focus, .accordion-button:focus,.navb
 		font-size: 13px;
 		width: 50%;
 		margin: 7px auto;
+	}
+	#hero .scroll{
+		margin-bottom: 20%;
 	}
 	.row{
 		margin-left: 0;
@@ -398,5 +410,13 @@ input[type="text"]:focus,button:focus, .btn:focus, .accordion-button:focus,.navb
 	.gallery-txt{
 		padding-top: 15px !important;
 		font-size: 15px;
+	}
+}
+
+
+
+@media (min-width: 577px){
+	#featured .featured-img{
+		height: 500px;
 	}
 }
